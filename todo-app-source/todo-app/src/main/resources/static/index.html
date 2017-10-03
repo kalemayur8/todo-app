@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Todo List</title>
+<base href="/todo/" target="_blank" />
+<link rel="stylesheet" href="app/styles/bootstrap.min.css"/>
+<link rel="stylesheet" href="app/styles/main.css"/>
+</head>
+<body>
+<hr></hr>
+<div ng-app="TodoApp">
+<div class="container"><h2>To Do List</h2></div>
+	<div class="container">	
+		<ul class="nav nav-tabs">
+					<li class="active">
+		        		<a  href="#!" data-target="\" data-toggle="tab">To Do</a>
+					</li>
+					<li>
+						<a href="#!pending" data-target="pending" data-toggle="tab">Pending</a>
+					</li>
+					<li>
+						<a href="#!complete" data-target="complete" data-toggle="tab">Completed</a>
+					</li>
+		</ul>
+		<div class="tab-content">
+		<br>
+			<div ng-view></div>
+		</div>
+	</div>
+	
+</div>
+	<script src="app/scripts/lib/jquery/jquery.js"></script>
+	<script src="app/scripts/lib/bootstrap/bootstrap.min.js"></script>
+	<script src="app/scripts/lib/angular/angular.min.js"></script>
+	<script src="app/scripts/lib/angular-route/angular-route.min.js"></script>
+	<script src="app/scripts/lib/angular-resource/angular-resource.min.js"></script>
+	<script src="app/scripts/app.js"></script>
+	<script src="app/scripts/controllers/main.js"></script>
+	<script src="app/scripts/controllers/pending.js"></script>
+	<script src="app/scripts/controllers/complete.js"></script>
+	
+</body>
+</html>
